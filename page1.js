@@ -116,16 +116,12 @@ document.addEventListener('click', function(e){
         p8.innerHTML = p14.innerHTML;
         e.target.classList.add('verde')
         p4.innerHTML = 'Afuera'
-    }else if(e.target.id == 'p7' && campeon.innerHTML != p8.innerHTML){
-        campeon.innerHTML = p7.innerHTML;
-        e.target.classList.add('verde')
-        p7.innerHTML = 'CAMPEON'
+    }else if(e.target.id == 'p7'){
+        p7.innerHTML = 'CHAMPION'
         p8.innerHTML = 'Cebollita'
         alert(campeon.innerHTML + ' Sos el mejor')
-    }else if(e.target.id == 'p8' && campeon.innerHTML != p7.innerHTML){
-        campeon.innerHTML = p8.innerHTML;
-        e.target.classList.add('verde')
-        p8.innerHTML = 'CAMPEON'
+    }else if(e.target.id == 'p8'){
+        p8.innerHTML = 'CHAMPION'
         p7.innerHTML = 'Cebollita'
         alert(campeon.innerHTML + ' Sos el mejor')
         }
