@@ -34,12 +34,24 @@ section{
 	height: 100%;
 	width: 100%;
 	transition: 320ms;
-	background: rgba(14, 1, 1, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 }
 .nav-list{
 	width: calc(100% - 40px);
 	height: 100%;
 	background: rgba(14, 1, 1, 0.5);
+}
+
+.nav-list li{
+    margin-bottom: 10px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: snow;
+    border-bottom: solid;
+    border-color: snow;
 }
 
 .main-nav.is-open{
@@ -103,4 +115,20 @@ text-align: center;
 .back1{
     color: blanchedalmond;
     margin-right: 2px;
+}
+
+.team-container div{
+    color: snow;
+}
+
+.images{
+    height: 60px;
+    width: auto;
+}
+
+.images-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
