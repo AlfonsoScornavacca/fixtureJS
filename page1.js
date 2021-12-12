@@ -13,6 +13,8 @@ let p14 = document.getElementById('p14')
 let p15 = document.getElementById('p15')
 let p16 = document.getElementById('p16')
 let btn = document.getElementById("btn")
+let modalText = document.getElementById("modalText")
+let champion = document.getElementById("champion")
 let reset = document.getElementById("reset")
 let nombre = document.getElementById("nombre")
 let nombre2 = document.getElementById("nombre2")
@@ -114,14 +116,14 @@ document.addEventListener('click', function(e){
         e.target.classList.add('verde')
         p4.innerHTML = 'Afuera'
     }else if(e.target.id == 'p7'){
-        p7.innerHTML = 'CHAMPION'
         p8.innerHTML = 'Cebollita'
-        alert(campeon.innerHTML + ' Sos el mejor')
+        champ()
+        modalText.innerHTML = p7.innerHTML;
     }else if(e.target.id == 'p8'){
-        p8.innerHTML = 'CHAMPION'
         p7.innerHTML = 'Cebollita'
-        alert(campeon.innerHTML + ' Sos el mejor')
-        }
+        champ()
+        modalText.innerHTML = p8.innerHTML;
+    }
 })
 
 btn2.addEventListener('click', function(){
@@ -138,3 +140,7 @@ const toggle = document.querySelector('.toggle-btn');
 toggle.addEventListener('click', ()=>{
     navbar.classList.toggle('is-open');
 })
+function champ() {
+
+    document.getElementById('champion').classList.add('finish_sub')
+}

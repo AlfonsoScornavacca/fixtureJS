@@ -166,6 +166,48 @@ form{
     font-size:small;
 }
 
+#champion{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border:solid rgb(255, 255, 255) 1px;
+    border-style: double;
+    background-color: rgb(5, 0, 0);
+}
+
+.champion-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finish_sub{
+    display: block !important;
+
+}
+
+.txt-champ{
+    font-family: 'Architects Daughter', cursive;
+    color: snow;
+    font-size: 30px;
+}
+
+#modalText{
+    box-sizing: content-box;
+    color: snow;
+    font-size: 30px;
+    margin-top: 2px;
+    border-style: groove;
+    border-color: tomato;
+}
+
 @media only screen and (min-width:719px){
 
 .boton{

@@ -66,13 +66,13 @@ document.addEventListener('click', function(e){
         e.target.classList.add('verde')
         p4.innerHTML = 'Afuera'
     }else if(e.target.id == 'p7'){
-        p7.innerHTML = 'CHAMPION'
         p8.innerHTML = 'Cebollita'
-        alert(campeon.innerHTML + ' Sos el mejor')
+        champ()
+        modalText.innerHTML = p7.innerHTML;
     }else if(e.target.id == 'p8'){
-        p8.innerHTML = 'CHAMPION'
         p7.innerHTML = 'Cebollita'
-        alert(campeon.innerHTML + ' Sos el mejor')
+        champ()
+        modalText.innerHTML = p8.innerHTML;
         }
 })
 
@@ -90,3 +90,7 @@ const toggle = document.querySelector('.toggle-btn');
 toggle.addEventListener('click', ()=>{
     navbar.classList.toggle('is-open');
 })
+function champ() {
+
+    document.getElementById('champion').classList.add('finish_sub')
+}
