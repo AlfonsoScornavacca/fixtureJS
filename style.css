@@ -196,4 +196,14 @@ h2{
     width: 70px;
     height: 40px;
 }
+
+.back1{
+    font-size: 25px;
+    margin-right: 4px;
+}
+
+.nav-list li a{
+    font-size: 30px;
+}
+    
 }
