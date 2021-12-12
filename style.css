@@ -52,6 +52,8 @@ section{
     text-decoration: none;
     font-size: 20px;
     color: snow;
+    border-right: solid;
+    border-radius: 7px;
     border-bottom: solid;
     border-color: snow;
 }
@@ -154,7 +156,7 @@ form{
     padding-top: 10px;
     background: rgba(59,39,39,0.5);
     border-style: solid;
-    border-radius: 3px;
+    border-radius: 5px;
     border-width: 1px;
     border-color:#C99534;
     color: rgb(255, 255, 255);
@@ -162,4 +164,36 @@ form{
     width: 70px;
     text-align: center;
     font-size:small;
+}
+
+@media only screen and (min-width:719px){
+
+.boton{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+.images{
+    height: 120px;
+    width: auto;
+}
+
+.input-name{
+    margin-bottom: 10px;
+}
+
+.enter{
+    width: 70px;
+    height: 40px;
+}
 }
